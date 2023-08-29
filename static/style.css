@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #848f79;
+}
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+}
+h1{
+    margin-bottom: 20px;
+}
+.container{
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 10px 10px;
+    height: 50vh;
+    
+}
+textarea{
+  width: 100%;
+}
+label{
+    font-size: 20px;  
+}
+button{
+    margin-top: 10px;
+    padding: 5px 5px;
+    font-size: 20px;
+    
+}
+.answer{
+    margin-top: -38px;
+    margin-left: 90px;
+    font-size: 22px;
+    border: 1px solid #848f79;
+    width: 7%;
+    text-align: center;
+    position: absolute;
+    padding: 5px 4px;
+}
+.spam{
+    background-color: red;
+    color: white;
+    border: none;
+}
+.not{
+    background-color: green;
+    color: white;
+    border: none;
+}
+.ans{
+    color: white;
+    border:none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spam messages</title>
+    <link  rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='style.css')}}">
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Spam Messages Classifier</h1>
+            <div class="content">
+                <form action="/predict" method="post">
+                    <label for="text">Enter Message</label>
+                    <textarea name="text-area" id="" cols="30" rows="10" id="text"></textarea>   
+                    <button type="submit">Predict</button>
+                </form>
+            </div>
+            {% if result %}
+                {% if result=='0'%}
+                    <div class="answer not">Not Spam</div>
+                {% else %}
+                    <div class="answer spam">Spam</div>
+                {% endif %}   
+            {% else %}
+                <div class="answer ans">ans</div>
+            {% endif %}    
+        </div>
+    </div>
+</body>
+</html>
